@@ -6,7 +6,11 @@ import contactsRouter from "./contacts/routes.js";
 const app = express();
 
 app.get("/", (_, res) => {
-  res.send("Hello World!");
+  res.send("Hello World");
+});
+
+app.get("/about", (_, res) => {
+  res.send("About Me");
 });
 
 app.use(express.json());
